@@ -1,5 +1,6 @@
 function logger(req, res, next) {
   // DO YOUR MAGIC
+  const timestamp = new Date().toLocaleString()
   console.log('logger middleware')
   next()
 }
