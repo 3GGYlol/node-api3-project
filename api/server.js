@@ -1,5 +1,5 @@
 const express = require('express');
-
+const { } = require('./middleware/middleware')
 const server = express();
 
 // remember express by default cannot parse JSON in request bodies
