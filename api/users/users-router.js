@@ -87,7 +87,7 @@ router.post('/:id/posts', validateUserId, validatePost, async (req, res, next) =
   }
 });
 
-router.use((err, req, res, next) => {
+router.use((err, req, res, next) => { // eslint-disable-line
   res.status(err.status || 500).json({
     customMessage: 'something tragic inside posts router happened',
     message: err.message,
